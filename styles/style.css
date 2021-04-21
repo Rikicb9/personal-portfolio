@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -66,17 +71,15 @@ h1, h2 {
     font-size: 2rem;
 }
 
-#Projects {
-    width: 100vw;
-    height: 100vh; 
-    background: lightsalmon;
+.projects-section {
     text-align: center;
     padding: 10rem 2rem;
+    background: linear-gradient(62deg, #6699cc 0%, #004d99 100%);
 }
 
 .projects-section-header {
     max-width: 640px;
-    margin: 4rem auto 6rem auto;
+    margin: 3rem auto 5rem auto;
     border-bottom: 0.2rem solid white;
 }
 
@@ -87,8 +90,8 @@ h2 {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding-top: 4rem;
-    grid-gap: 4rem;
+    padding-top: 2rem;
+    grid-gap: 3rem;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -101,13 +104,13 @@ a {
 }
 
 .project {
-    background: gray;
+    background: darkslategray;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
 }
 
 .project-image {
-    height: calc(100% - 6.8rem);
+    height: calc(100% - 3.8rem);
     width: 100%;
     object-fit: cover;
 }
@@ -118,6 +121,23 @@ img {
 }
 
 .project-title {
-    font-size: 2rem;
-    padding: 2rem 0.5rem;
+    font-size: 1.75rem;
+    padding: 0.75rem 0.5rem;
+}
+
+.code {
+    color: whitesmoke;
+    transition: color 0.3s ease-out;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: darkcyan;
 }
