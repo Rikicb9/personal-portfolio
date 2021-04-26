@@ -26,6 +26,11 @@ body {
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
+#navbar ul>li>a:hover {
+    background:rgba(0,0,0,.33);
+    opacity:1;
+}
+
 .topnav {
     display: flex;
     margin-right: 2rem;
